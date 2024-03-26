@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetchData from "../Hooks/useFecthData";
 import { useEffect, useState } from "react";
+import { setReadBookLS } from "../Utils/setReadBookLS";
 
 const BookDetails = () => {
   const { data } = useFetchData();
@@ -73,8 +74,11 @@ const BookDetails = () => {
             </tr>
           </table>
           <div className="mt-8">
-            <button className="btn bg-transparent border-2 mr-6">Read</button>
-            <button className="btn bg-[#50B1C9] text-white">wish list</button>
+            <button
+            onClick={()=>{setReadBookLS(singleBook)}}
+             className="btn bg-transparent border-2 mr-6">Read</button>
+            <button
+             className="btn bg-[#50B1C9] text-white">wish list</button>
           </div>
         </div>
       </div>

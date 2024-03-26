@@ -1,45 +1,60 @@
-const ReadBook = () => {
+import PropTypes from 'prop-types';
+const ReadBook = ({items}) => {
+  const { bookName,
+    author,
+    imageLink,
+    category,
+    rating,
+    totalPage,
+    yearOfPublishing,
+    publisher,
+    tags,}=items
+    const [firstTag, secondTag] = tags;
   return (
-    <div className="flex gap-6 border p-6 rounded-xl mt-6">
-      <div className="w-1/3">
-        <img
-          className="h-full w-full object-cover rounded-xl"
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt=""
-        />
+    <div className="flex lg:gap-12 gap-6 border p-6 rounded-xl mt-6">
+      <div className="">
+        <img 
+        className='h-[300px] object-cover'
+        src={imageLink} alt="" />
       </div>
-      <div>
-        <h1 className="text-2xl font-bold playfair">The catcher in the rye</h1>
-        <p className="font-medium opacity-80 mt-4">By: hero alom</p>
+      <div className=''>
+        <h1 className="text-2xl font-bold playfair">{bookName}</h1>
+        <p className="font-medium opacity-80 mt-4">By: {author}</p>
         <div className="lg:flex gap-6 mt-4">
           <p className="flex items-center font-bold gap-2">
             Tags:
-            <button className="btn">aslfjslkf</button>
-            <button className="btn">sahjdflksaj</button>
+            <button className="bg-slate-100 px-3 py-2 rounded-full text-green-400 font-medium">
+              #{firstTag}
+            </button>
+            <button className="bg-slate-100 px-3 py-2 rounded-full text-green-400 font-medium">
+              #{secondTag}
+            </button>
           </p>
           <div className="flex items-center mt-4 lg:mt-0">
             <span className="material-symbols-outlined">location_on</span>
-            <h1 className="opacity-80">Year of publishing:</h1>
+            <h1 className="opacity-80">Year of publishing: {yearOfPublishing}</h1>
           </div>
         </div>
         <div className="flex gap-24 border-b-2 mt-4 pb-4">
           <div className="flex gap-1">
             <span className="material-symbols-outlined">group</span>
-            <h1 className="opacity-80">Publisher: Hero alom</h1>
+            <h1 className="opacity-80">Publisher: {publisher}</h1>
           </div>
           <div className="flex gap-1">
             <span className="material-symbols-outlined">news</span>
-            <h1 className="opacity-80">Page: 192</h1>
+            <h1 className="opacity-80">Page: {totalPage}</h1>
           </div>
         </div>
         <div className="mt-4 flex justify-between flex-wrap">
-          <button className="btn">Category: matha</button>
-          <button className="btn">Rating: 2.5</button>
-          <button className="btn">View Details</button>
+          <button className="btn bg-[#328EFF80] text-[#328EFF]">Category: {category}</button>
+          <button className="btn bg-[#FFAC3380] text-[#FFAC33]">Rating: {rating}</button>
+          <button className="btn bg-[#23BE0A] text-white">View Details</button>
         </div>
       </div>
     </div>
   );
 };
-
+ReadBook.propTypes = {
+  items: PropTypes.object
+};
 export default ReadBook;
