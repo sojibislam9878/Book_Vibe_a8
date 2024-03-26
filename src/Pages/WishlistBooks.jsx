@@ -1,7 +1,9 @@
+import WishBook from "../components/WishBook";
+
 const WishlistBooks = () => {
     return (
         <div>
-            wishlist books.....
+            <WishBook></WishBook>
         </div>
     );
 };

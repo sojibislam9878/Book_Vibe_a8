@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const activelink ="bg-transparent border border-[#23BE0A] text-[#23BE0A] hover:bg-transparent focus:bg-transparent focus:text-[#23BE0A] "
+  const normalink =""
   return (
     <nav>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -27,19 +29,19 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
             >
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" className={({isActive})=> isActive?activelink:normalink}>Home</NavLink>
               </li>
               <li>
-                <NavLink to="listedbooks">Listed Books</NavLink>
+                <NavLink to="listedbooks" className={({isActive})=> isActive?activelink:normalink}>Listed Books</NavLink>
               </li>
               <li>
-                <NavLink to="pagestoread">Pages to Read</NavLink>
+                <NavLink to="pagestoread" className={({isActive})=> isActive?activelink:normalink}>Pages to Read</NavLink>
               </li>
               <li>
-                <NavLink to="trendingbooks">Trending Books</NavLink>
+                <NavLink to="trendingbooks" className={({isActive})=> isActive?activelink:normalink}>Trending Books</NavLink>
               </li>
               <li>
-                <NavLink to="contactus">Contact Us</NavLink>
+                <NavLink to="contactus" className={({isActive})=> isActive?activelink:normalink}>Contact Us</NavLink>
               </li>
             </ul>
           </div>
@@ -48,19 +50,19 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg space-x-4">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" className={({isActive})=> isActive?activelink:normalink}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="listedbooks">Listed Book</NavLink>
+              <NavLink to="listedbooks" className={({isActive})=> isActive?activelink:normalink}>Listed Book</NavLink>
             </li>
             <li>
-              <NavLink to="pagestoread">Pages to Read</NavLink>
+              <NavLink to="pagestoread" className={({isActive})=> isActive?activelink:normalink}>Pages to Read</NavLink>
             </li>
             <li>
-              <NavLink to="trendingbooks">Trending Books</NavLink>
+              <NavLink to="trendingbooks" className={({isActive})=> isActive?activelink:normalink}>Trending Books</NavLink>
             </li>
             <li>
-              <NavLink to="contactus">Contact Us</NavLink>
+              <NavLink to="contactus" className={({isActive})=> isActive?activelink:normalink}>Contact Us</NavLink>
             </li>
           </ul>
         </div>
