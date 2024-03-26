@@ -8,7 +8,7 @@
       "totalPage": 324,
       "rating": 4.5,
       "category": "Fiction",
-      "tags": ["Classic", "Legal Drama", "Southern Gothic"],
+      "tags": ["Classic", "Legal Drama"],
       "publisher": "Harper Perennial Modern Classics",
       "yearOfPublishing": 1960
     },
@@ -21,7 +21,7 @@
       "totalPage": 328,
       "rating": 4.6,
       "category": "Fiction",
-      "tags": ["Dystopian", "Political Fiction", "Satire"],
+      "tags": ["Dystopian", "Satire"],
       "publisher": "Signet Classics",
       "yearOfPublishing": 1949
     },
@@ -34,7 +34,7 @@
       "totalPage": 180,
       "rating": 4.3,
       "category": "Fiction",
-      "tags": ["Classic", "Romance", "Tragedy"],
+      "tags": ["Romance", "Tragedy"],
       "publisher": "Scribner",
       "yearOfPublishing": 1925
     },
@@ -47,7 +47,7 @@
       "totalPage": 279,
       "rating": 4.4,
       "category": "Fiction",
-      "tags": ["Romance", "Classic", "Regency"],
+      "tags": ["Romance", "Regency"],
       "publisher": "Wordsworth Editions",
       "yearOfPublishing": 1813
     },
@@ -60,7 +60,7 @@
       "totalPage": 277,
       "rating": 4.2,
       "category": "Fiction",
-      "tags": ["Coming-of-Age", "Classic", "Alienation"],
+      "tags": ["Classic", "Alienation"],
       "publisher": "Little, Brown and Company",
       "yearOfPublishing": 1951
     },
@@ -73,7 +73,7 @@
       "totalPage": 720,
       "rating": 4.7,
       "category": "Fiction",
-      "tags": ["Adventure", "Classic", "Sea Story"],
+      "tags": ["Adventure","Sea Story"],
       "publisher": "Harper & Brothers",
       "yearOfPublishing": 1851
     },
@@ -86,7 +86,7 @@
       "totalPage": 310,
       "rating": 4.6,
       "category": "Fantasy",
-      "tags": ["Adventure", "Middle Earth", "Quest"],
+      "tags": ["Adventure","Quest"],
       "publisher": "Allen & Unwin",
       "yearOfPublishing": 1937
     },{
@@ -98,7 +98,7 @@
       "totalPage": 1178,
       "rating": 4.8,
       "category": "Fantasy",
-      "tags": ["Epic", "Adventure", "Middle Earth"],
+      "tags": ["Epic", "Adventure"],
       "publisher": "Allen & Unwin",
       "yearOfPublishing": 1954
     },
@@ -111,7 +111,7 @@
       "totalPage": 206,
       "rating": 4.5,
       "category": "Fantasy",
-      "tags": ["Children's Literature", "Adventure", "Magic"],
+      "tags": ["Adventure", "Magic"],
       "publisher": "Geoffrey Bles",
       "yearOfPublishing": 1950
     }
