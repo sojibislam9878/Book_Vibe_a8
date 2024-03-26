@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 function Book({ book }) {
-  const { bookName, author, imageLink, category, tags, rating } = book;
+  const {bookId, bookName, author, imageLink, category, tags, rating } = book;
   const [firstTag, secondTag] = tags;
   return (
+    <Link to={`book-details/${bookId}`}>
     <div>
       <div className="card card-compact bg-base-100 shadow-xl h-full">
         <figure>
@@ -31,6 +33,7 @@ function Book({ book }) {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
 Book.propTypes = {

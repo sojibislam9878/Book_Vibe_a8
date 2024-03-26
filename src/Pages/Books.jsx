@@ -2,7 +2,7 @@ import useFetchData from "../Hooks/useFecthData";
 import Book from "../components/Book";
 
 const Books = () => {
- const {data , loading}=useFetchData()
+ const {data}=useFetchData()
   return (
     <div className="lg:mt-24 mt-12">
       <h1 className="text-4xl font-bold text-center playfair">Books</h1>

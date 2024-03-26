@@ -11,6 +11,7 @@ import ListedBooks from './Pages/ListedBooks';
 import PagesToRead from './Pages/PagesToRead';
 import TrendingBooks from './Pages/TrendingBooks';
 import ContactUs from './Pages/ContactUs';
+import BookDetails from './Pages/BookDetails';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path:"/contactus",
         element:<ContactUs></ContactUs>,
+      },
+      {
+        path:"/book-details/:bookId",
+        element:<BookDetails></BookDetails>,
       },
     ]
   },
