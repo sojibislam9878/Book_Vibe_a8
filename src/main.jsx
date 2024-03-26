@@ -12,6 +12,8 @@ import PagesToRead from './Pages/PagesToRead';
 import TrendingBooks from './Pages/TrendingBooks';
 import ContactUs from './Pages/ContactUs';
 import BookDetails from './Pages/BookDetails';
+import ReadBooks from './Pages/ReadBooks';
+import WishlistBooks from './Pages/WishlistBooks';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,16 @@ const router = createBrowserRouter([
       {
         path:"/listedbooks",
         element:<ListedBooks></ListedBooks>,
+        children:[
+          {
+            index:true,
+            element:<ReadBooks></ReadBooks>
+          },
+          {
+            path:"wishlistbooks",
+            element:<WishlistBooks></WishlistBooks>
+          }
+        ]
       },
       {
         path:"/pagestoread",
