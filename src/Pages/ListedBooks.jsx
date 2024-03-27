@@ -17,7 +17,7 @@ const ListedBooks = () => {
             role="button"
             className="btn m-1 bg-green-500 text-white"
           >
-            Sort by{" "}
+            Sort by {""}
             <span className="material-symbols-outlined">expand_more</span>
           </div>
           <ul
@@ -39,10 +39,20 @@ const ListedBooks = () => {
       {/* read books wish books */}
       <div className="flex gap-5 mt-16 text-lg opacity-80 ">
         <div role="tablist" className="tabs tabs-lifted">
-          <Link to="" onClick={()=>setTabIndex(0)} role="tab" className={`tab ${tabIndex===0 ? "tab-active" : ""}` }>
+          <Link
+            to=""
+            onClick={() => setTabIndex(0)}
+            role="tab"
+            className={`tab ${tabIndex === 0 ? "tab-active" : ""}`}
+          >
             Read Books
           </Link>
-          <Link to="wishlistbooks" onClick={()=>setTabIndex(1)} role="tab" className={`tab ${tabIndex===1 ? "tab-active" : ""}` }>
+          <Link
+            to="wishlistbooks"
+            onClick={() => setTabIndex(1)}
+            role="tab"
+            className={`tab ${tabIndex === 1 ? "tab-active" : ""}`}
+          >
             Wishlist Books
           </Link>
         </div>

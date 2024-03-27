@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Banner = () => {
   return (
     <div className="lg:mt-12 mt-6">
@@ -12,7 +14,7 @@ const Banner = () => {
               Books to freshen up your bookshelf
             </h1>
             <div className="text-center lg:text-left mt-12">
-              <button className="btn btn-primary">View The List</button>
+              <Link to="/listedbooks"><button className="btn bg-green-600 text-white">View The List</button></Link>
             </div>
           </div>
         </div>

@@ -14,11 +14,13 @@ import ContactUs from './Pages/ContactUs';
 import BookDetails from './Pages/BookDetails';
 import ReadBooks from './Pages/ReadBooks';
 import WishlistBooks from './Pages/WishlistBooks';
+// import Error from './Pages/Error ';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Root></Root>,
+    // errorElement:<Error></Error>,
     children:[
       {
         path:"/",
@@ -52,6 +54,10 @@ const router = createBrowserRouter([
       },
       {
         path:"/book-details/:bookId",
+        element:<BookDetails></BookDetails>,
+      },
+      {
+        path:"listedbooks/book-details/:bookId",
         element:<BookDetails></BookDetails>,
       },
     ]

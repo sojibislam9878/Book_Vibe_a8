@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 const ReadBook = ({items}) => {
-  const { bookName,
+  const { 
+    bookId,
+    bookName,
     author,
     imageLink,
     category,
@@ -12,12 +15,12 @@ const ReadBook = ({items}) => {
     const [firstTag, secondTag] = tags;
   return (
     <div className="flex lg:gap-12 gap-6 border p-6 rounded-xl mt-6">
-      <div className="">
+      <div className="w-1/3">
         <img 
         className='h-[300px] object-cover'
         src={imageLink} alt="" />
       </div>
-      <div className=''>
+      <div className='w-2/3'>
         <h1 className="text-2xl font-bold playfair">{bookName}</h1>
         <p className="font-medium opacity-80 mt-4">By: {author}</p>
         <div className="lg:flex gap-6 mt-4">
@@ -45,10 +48,10 @@ const ReadBook = ({items}) => {
             <h1 className="opacity-80">Page: {totalPage}</h1>
           </div>
         </div>
-        <div className="mt-4 flex justify-between flex-wrap">
+        <div className="mt-4 flex gap-6 flex-wrap">
           <button className="btn rounded-full bg-[#328EFF80] text-[#328EFF]">Category: {category}</button>
           <button className="btn rounded-full bg-[#FFAC3380] text-[#FFAC33]">Rating: {rating}</button>
-          <button className="btn rounded-full bg-[#23BE0A] text-white">View Details</button>
+          <Link to={`book-details/${bookId}`}><button className="btn rounded-full bg-[#23BE0A] text-white">View Details</button></Link>
         </div>
       </div>
     </div>
