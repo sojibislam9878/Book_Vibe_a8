@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="container mx-auto p-4 flex justify-center items-center h-screen">
       <div className="text-center">
         <h1 className="text-3xl font-bold">Oops!</h1>
         <p className="text-lg font-medium mt-4">sorry, an unexpected error has occurred.</p>

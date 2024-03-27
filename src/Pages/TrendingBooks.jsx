@@ -1,6 +1,6 @@
 const TrendingBooks = () => {
   return (
-    <div>
+    <div  className="container mx-auto p-4">
       <div className="mt-6">
         <h1 className="text-2xl font-bold">Top 3 Books:</h1>
       </div>

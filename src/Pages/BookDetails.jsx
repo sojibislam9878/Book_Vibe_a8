@@ -27,7 +27,7 @@ const BookDetails = () => {
   } = singleBook || {};
   const [firstTag, secondTag] = tags || [];
   return (
-    <div className="lg:flex gap-4 mt-12">
+    <div className="lg:flex gap-4 mt-12 container mx-auto p-4">
       <div className=" lg:w-1/3 flex justify-center items-center">
         <img
           className="h-full w-full object-cover rounded-xl"

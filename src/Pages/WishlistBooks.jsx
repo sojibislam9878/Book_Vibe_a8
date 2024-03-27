@@ -6,7 +6,7 @@ const WishlistBooks = () => {
     const {wishBookLS=[]}=useWishBookLs()
     console.log(wishBookLS);
     return (
-        <div>
+        <div  className="container mx-auto p-4">
             {
                 wishBookLS.map(items=><WishBook key={items.bookId} items={items}></WishBook>)
             }

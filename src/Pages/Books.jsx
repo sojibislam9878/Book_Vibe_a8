@@ -4,7 +4,7 @@ import Book from "../components/Book";
 const Books = () => {
  const {data}=useFetchData()
   return (
-    <div className="lg:mt-24 mt-12">
+    <div className="lg:mt-24 mt-12 container mx-auto p-4">
       <h1 className="text-4xl font-bold text-center playfair">Books</h1>
       {/* cards */}
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-9">

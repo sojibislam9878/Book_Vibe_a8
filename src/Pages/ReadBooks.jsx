@@ -6,7 +6,7 @@ const ReadBooks = () => {
   
     // readedBooksLS.sort((a, b) => a.bookName.localeCompare(b.bookName) )
     return (
-        <div>
+        <div  className="container mx-auto p-4">
             {
                 readedBooksLS.map(items=><ReadBook key={items.bookId} items={items}></ReadBook>)
             }

@@ -4,7 +4,7 @@ const Navbar = () => {
   const activelink ="bg-transparent border border-[#23BE0A] text-[#23BE0A] hover:bg-transparent focus:bg-transparent focus:text-[#23BE0A] "
   const normalink =""
   return (
-    <nav>
+    <nav  className="container mx-auto p-4">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">

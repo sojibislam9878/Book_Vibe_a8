@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <div className=" flex flex-col-reverse lg:flex lg:flex-row justify-between mt-20">
+    <div className="container mx-auto p-4 flex flex-col-reverse lg:flex lg:flex-row justify-between mt-20">
       <div className="lg:w-1/2 border bg-black text-white p-4">
         <h1 className="text-3xl font-bold text-center">Contact Information</h1>
         <p className="text-center">We are available 24/7/365</p>

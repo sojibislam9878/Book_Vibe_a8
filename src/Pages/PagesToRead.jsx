@@ -27,7 +27,7 @@ const PagesToRead = () => {
         return <div className='flex justify-center mt-12 bg-red-400'><h1 className='p-6 text-xl font-bold text-red-800'>No data available</h1></div>
     }
   return (
-    <div className='flex justify-center items-center mt-12 w-full mx-auto overflow-x-auto'>
+    <div className=' container mx-auto p-4 flex justify-center items-center mt-12 w-full overflow-x-auto'>
         <div>
         <BarChart
       width={1000}

@@ -10,7 +10,7 @@ const ListedBooks = () => {
   }
   console.log("from home", clickItem);
   return (
-    <div>
+    <div  className="container mx-auto p-4">
       <div className="text-3xl font-bold text-center bg-slate-200 p-8 rounded-xl mt-8">
         Books
       </div>

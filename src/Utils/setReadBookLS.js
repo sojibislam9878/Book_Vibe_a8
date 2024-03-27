@@ -16,7 +16,7 @@ export const setReadBookLS =(singleBook , toast)=>{
             theme: "light",
             });
     }else{
-        toast.warn('Book allready added', {
+        toast.warn('Book already added as read', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
