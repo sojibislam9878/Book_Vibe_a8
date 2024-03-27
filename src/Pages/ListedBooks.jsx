@@ -9,7 +9,6 @@ const ListedBooks = () => {
     setclickItem(e)
   }
   console.log("from home", clickItem);
-  // const array = [1,2,3,4,5,6,7,8,9]
   return (
     <div>
       <div className="text-3xl font-bold text-center bg-slate-200 p-8 rounded-xl mt-8">

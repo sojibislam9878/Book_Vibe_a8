@@ -14,17 +14,17 @@ const WishBook = ({items}) => {
     tags,}=items
     const [firstTag, secondTag] = tags;
   return (
-    <div className="flex lg:gap-12 gap-6 border p-6 rounded-xl mt-6">
-      <div className="w-1/3">
+    <div className="md:flex lg:gap-12 gap-6 border p-6 rounded-xl mt-6">
+      <div className="md:w-1/3">
         <img 
-        className='h-[300px] object-cover'
+        className='md:h-[300px] w-full h-full md:object-cover '
         src={imageLink} alt="" />
       </div>
-      <div className='w-2/3'>
+      <div className='md:w-2/3'>
         <h1 className="text-2xl font-bold playfair">{bookName}</h1>
         <p className="font-medium opacity-80 mt-4">By: {author}</p>
         <div className="lg:flex gap-6 mt-4">
-          <p className="flex items-center font-bold gap-2">
+          <p className="flex flex-wrap items-center font-bold gap-2">
             Tags:
             <button className="bg-slate-100 px-3 py-2 rounded-full text-green-400 font-medium">
               #{firstTag}
@@ -38,7 +38,7 @@ const WishBook = ({items}) => {
             <h1 className="opacity-80">Year of publishing: {yearOfPublishing}</h1>
           </div>
         </div>
-        <div className="flex gap-24 border-b-2 mt-4 pb-4">
+        <div className="flex flex-wrap md:gap-24 gap-6 border-b-2 mt-4 pb-4">
           <div className="flex gap-1">
             <span className="material-symbols-outlined">group</span>
             <h1 className="opacity-80">Publisher: {publisher}</h1>

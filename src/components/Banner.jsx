@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="lg:mt-12 mt-6">
-      <div className="hero bg-base-200 p-20 rounded-xl">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className=" bg-base-200 p-20 rounded-xl">
+        <div className=" flex flex-col lg:flex-row-reverse  ">
           <img
+            
             src="https://i.ibb.co/jW3RH3C/1.jpg"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className=" rounded-lg shadow-2xl w-[400px] mx-auto"
           />
-          <div>
+          <div className="mt-12">
             <h1 className="text-5xl font-bold lg:w-2/3 text-center lg:text-left playfair lg:leading-[84px] leading-[60px]">
               Books to freshen up your bookshelf
             </h1>
