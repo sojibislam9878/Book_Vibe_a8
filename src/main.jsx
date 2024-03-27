@@ -60,6 +60,10 @@ const router = createBrowserRouter([
         path:"listedbooks/book-details/:bookId",
         element:<BookDetails></BookDetails>,
       },
+      {
+        path:"listedbooks/wishlistbooks/book-details/:bookId",
+        element:<BookDetails></BookDetails>,
+      },
     ]
   },
 ]);

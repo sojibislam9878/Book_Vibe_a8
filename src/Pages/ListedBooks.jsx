@@ -3,14 +3,21 @@ import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
+  const [clickItem , setclickItem]=useState("")
   console.log(tabIndex);
+  const handleSort=(e)=>{
+    setclickItem(e)
+  }
+  console.log("from home", clickItem);
+  // const array = [1,2,3,4,5,6,7,8,9]
   return (
     <div>
       <div className="text-3xl font-bold text-center bg-slate-200 p-8 rounded-xl mt-8">
         Books
       </div>
       {/* dropdown */}
-      <div className="text-center lg:mt-8 mt-4">
+      <div 
+      className="text-center lg:mt-8 mt-4">
         <div className="dropdown">
           <div
             tabIndex={0}
@@ -21,17 +28,18 @@ const ListedBooks = () => {
             <span className="material-symbols-outlined">expand_more</span>
           </div>
           <ul
+          onClick={()=>{handleSort(event.target.innerText )}}
             tabIndex={0}
             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <a>Rating</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Number of Pages</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Publishd Year</a>
             </li>
           </ul>
         </div>
