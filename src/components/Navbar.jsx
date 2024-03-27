@@ -48,7 +48,7 @@ const Navbar = () => {
           <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-lg space-x-4">
+          <ul className="menu menu-horizontal px-1 xl:text-lg space-x-4">
             <li>
               <NavLink to="/" className={({isActive})=> isActive?activelink:normalink}>Home</NavLink>
             </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end hidden md:flex">
           <div className="flex gap-6 ">
             <a className="btn bg-green-600 text-white">Sign In</a>
             <a className="btn bg-blue-600 text-white">Sign UP</a>

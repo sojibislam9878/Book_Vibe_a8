@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import useFetchData from "../Hooks/useFecthData";
 import { useEffect, useState } from "react";
 import { setReadBookLS, setWishBook } from "../Utils/setReadBookLS";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
   const { data } = useFetchData();
@@ -76,7 +78,7 @@ const BookDetails = () => {
           <div className="mt-8">
             <button
               onClick={() => {
-                setReadBookLS(singleBook);
+                setReadBookLS(singleBook , toast);
               }}
               className="btn bg-transparent border-2 mr-6"
             >
@@ -84,7 +86,7 @@ const BookDetails = () => {
             </button>
             <button
               onClick={() => {
-                setWishBook(singleBook);
+                setWishBook(singleBook , toast);
               }}
               className="btn bg-[#50B1C9] text-white"
             >
@@ -93,6 +95,8 @@ const BookDetails = () => {
           </div>
         </div>
       </div>
+      
+<ToastContainer />
     </div>
   );
 };
