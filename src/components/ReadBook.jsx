@@ -14,7 +14,7 @@ const ReadBook = ({items}) => {
     tags,}=items
     const [firstTag, secondTag] = tags;
   return (
-    <div className="md:flex lg:gap-12 gap-6 border p-6 rounded-xl mt-6">
+    <div className=" md:flex lg:gap-12 gap-6 border p-6 rounded-xl mt-6">
       <div className="md:w-1/3 w-full">
         <img 
         className='md:h-[300px] w-full h-full object-cover'
