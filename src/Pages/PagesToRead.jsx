@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid} from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer} from 'recharts';
 import useReadedBooksLS from '../Hooks/useReadedBooksLS';
 import NoData from '../components/NoData';
 
@@ -28,8 +28,9 @@ const PagesToRead = () => {
         return <NoData></NoData>
     }
   return (
-    <div className=' container mx-auto p-4 flex justify-center items-center mt-12 w-full overflow-x-auto'>
-        <div>
+    <div className='flex justify-center items-center'>
+    
+    <ResponsiveContainer width={1000} height={500} >
         <BarChart
       width={1000}
       height={500}
@@ -55,8 +56,8 @@ const PagesToRead = () => {
         ))}
       </Bar>
     </BarChart>
-    </div>
-    </div>
+    </ResponsiveContainer>
+     </div>
   );
 };
 
