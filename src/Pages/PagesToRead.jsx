@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid} from 'recharts';
 import useReadedBooksLS from '../Hooks/useReadedBooksLS';
+import NoData from '../components/NoData';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink' ,'#a823eb'];
 
@@ -24,7 +25,7 @@ const PagesToRead = () => {
     const {readedBooksLS=[]}=useReadedBooksLS()
     const data = readedBooksLS;
     if (data.length <= 0) {
-        return <div className='flex justify-center mt-12 bg-red-400'><h1 className='p-6 text-xl font-bold text-red-800'>No data available</h1></div>
+        return <NoData></NoData>
     }
   return (
     <div className=' container mx-auto p-4 flex justify-center items-center mt-12 w-full overflow-x-auto'>
