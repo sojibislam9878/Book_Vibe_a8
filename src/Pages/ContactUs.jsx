@@ -34,18 +34,37 @@ const ContactUs = () => {
 
       <div className="border lg:w-1/2 p-4">
         <div className="text-center">
-        <h1 className="text-3xl font-bold">Have A Question?</h1>
-        <p className="font-semibold opacity-80">We are available 24/7/365</p>
+          <h1 className="text-3xl font-bold">Have A Question?</h1>
+          <p className="font-semibold opacity-80">We are available 24/7/365</p>
         </div>
         <div className="flex gap-4">
-            <input type="text" className="border-b pb-8 mt-2  w-full" placeholder="First Name"/>
-            <input type="text" className="border-b pb-8 mt-2  w-full" placeholder="Last Name"/>
+          <input
+            type="text"
+            className="border-b pb-8 mt-2  w-full"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            className="border-b pb-8 mt-2  w-full"
+            placeholder="Last Name"
+          />
         </div>
         <div className="lg:flex gap-4">
-            <input type="text" className="border-b pb-8 mt-2 w-full" placeholder="Your Email"/>
-            <input type="text" className="border-b pb-8 mt-2 w-full" placeholder="Phone"/>
+          <input
+            type="text"
+            className="border-b pb-8 mt-2 w-full"
+            placeholder="Your Email"
+          />
+          <input
+            type="text"
+            className="border-b pb-8 mt-2 w-full"
+            placeholder="Phone"
+          />
         </div>
-        <textarea className="border w-full mt-3 h-28 p-2" placeholder="Your messages"></textarea>
+        <textarea
+          className="border w-full mt-3 h-28 p-2"
+          placeholder="Your messages"
+        ></textarea>
         <button className="btn bg-green-600 text-white"> Submit</button>
       </div>
     </div>

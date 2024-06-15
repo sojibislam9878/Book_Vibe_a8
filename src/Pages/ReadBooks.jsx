@@ -7,9 +7,7 @@ const ReadBooks = () => {
   const { readedBooksLS = [] } = useReadedBooksLS();
   console.log(readedBooksLS.length);
   if (readedBooksLS.length <= 0) {
-    return (
-      <NoData></NoData>
-    );
+    return <NoData></NoData>;
   }
   return (
     <div className="container mx-auto p-4">
